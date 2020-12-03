@@ -22,7 +22,7 @@ All the codes to do this will be in the <a href="https://www.w3schools.com">note
 &nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/png.latex?mu%20%3Da&plus;bM*M%28std%29&plus;bRD*RD%28std%29)<br/>
 *Assuming mean of profit is normally distributed*<br/>
 <br/>
-You can also do some prior predictive checks if you want to get the sense of your priors. However I will be skipping prior predictive here.
+You can also do some prior predictive checks if you want to get the sense of your priors. However I will be skipping prior predictive checks for this example.
 
 ### Data
 In this example we will be taking a slice of profit and Loss account. The following are the variables simulated.<br/>
