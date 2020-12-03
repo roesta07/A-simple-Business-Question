@@ -13,7 +13,7 @@ To answer this question, we will be using multivariable regression model because
 The first and foremost thing in our workflow is to set our prior. A prior is just our prior belief; i.e. what do we know about our parameters before we see the data so that we don’t have to look for everything. Therefore, a prior is just a way of telling our model what is infinity and what is not.
 A prior can be improved and narrowed with right domain knowledge and expertise.
 
-All the codes to do this will be in the <a href="https://www.w3schools.com">notebook here</a>
+All the codes to do this will be in the <a href="https://github.com/roesta07/Business-Analysis-Template/blob/main/analysis.ipynb">notebook here</a>
 
  *Mathematically;*<br/>
 &nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
