@@ -11,7 +11,7 @@ To answer this question, we will be using multivariable regression model because
 A prior can be improved and narrowed with right domain knowledge and expertise.
 
  *Mathematically;
-	-Intercept		a~ Normal(0,0.5)
+	-Intercept		![intercept](https://latex.codecogs.com/gif.latex?a%5Csim%20Normal%280%2C0.5%29)
 	-Beta(marketing) 	bM~Normal(0,0.5)
 	-Beta(R&D)		bRD~ Normal(0,0.5)
 	-Mean			mu =a+bM*M_std+bA*RD_std*
