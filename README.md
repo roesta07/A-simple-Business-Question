@@ -1,4 +1,4 @@
-# Business-Analysis-Template
+# Business-Analysis
 Using Bayesian Approach to answer Business questions<br/>
 - Tools -Pymc3, Python<br/>
 
