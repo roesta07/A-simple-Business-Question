@@ -40,14 +40,20 @@ Our model will assume that profit will be distributed Normally:
 
 
 Let plot posterior predictive 
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/posterior_predective_2.png" width="600" height="600">
+
+
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/posterior_predective_2.png" width="400" height="400">
+
+
 At this point you can finalize your report; our model finds out the association of both variables with profit and gives pretty okay predictions. But wait; you still have some gut feeling of something is wrong that this is not it or you remember your boss saying something unusual is happening and you decide to look a deeper look at your data. This process is crucial. People often think statistical modelling is just about data & numbers so they often ignore information cues that is important to any model; which is why communicating to domain experts or people around the field is as much important as knowing statistics
 
 **Digging deep into your Data
 Let’s take a deep look at the data yearly.
 
-Fig: Trend Plot 
+**Trend Plot 
 
+
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/trend_3.png" width="1000" height="400">
 
 
 **Model 2-First Seven Years
@@ -73,17 +79,26 @@ In this Model we will be working with the later seven years
 	Profit_std-		profit~ Normal(mu,sigma)*
 
 Best way to demonstrate the change in parameters in using forest plot:
-
->>
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/forest_plot_4.png" width="700" height="300">
 
 **CounterFactuals
 We have seen the change now let’s see the affect. Such affects can be seen by asking further questions like what does change in one variable and keeping the other variables constant does with the outcome? It’s basically the question about past that if we had done this what would have happened? 
+
+
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/counter_1.png" width="1000" height="400">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/counter_2.png" width="1000" height="400">
+
 
 **Findings 
 -For first seven years Marketing was the cause of profit given only two predictor variable
 -After seven years till fourteen years Marketing had minimal or no affect to profit but was mimicking the association of R&D and profit. In statistical term it’s called spurious association. 
 
 Note: Multivariable regression does a very good thing by knocking the spurious association. It does this by looking at the association of the residuals for each variable after removing the effect of one. This all happens at the back of the algorithm so you don’t have to worry about it; well for now.
+
+
+Lastly, let's lets plot the Model prediction; which will look slightly better than Model 1
+
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/predective_posterior.png" width="400" height="400">
 
 
 
