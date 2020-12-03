@@ -7,7 +7,9 @@ Depending upon the variables collected, data collection process and some experti
 
 ## Our Business Question
 Are Marketing Expense and R&D expenses really affecting our profit or is it just one causing another?
-To answer this question, we will be using multivariable regression model because its good at knocking out spurious association which is what the question is all about; we will talk a lot about this later. The first and foremost thing in our workflow is to set our prior. A prior is just our prior belief; i.e. what do we know about our parameters before we see the data so that we don’t have to look for everything. Therefore, a prior is just a way of telling our model what is infinity and what is not.
+To answer this question, we will be using multivariable regression model because its good at knocking out spurious association which is what the question is all about; we will talk a lot about this later.
+### Prior
+The first and foremost thing in our workflow is to set our prior. A prior is just our prior belief; i.e. what do we know about our parameters before we see the data so that we don’t have to look for everything. Therefore, a prior is just a way of telling our model what is infinity and what is not.
 A prior can be improved and narrowed with right domain knowledge and expertise.
 
  *Mathematically;*<br/>
@@ -30,13 +32,12 @@ We can already see some association along all the variables. We can also calcula
 
 ### Model-1
 Our model will assume that profit will be distributed Normally:
-*Mathematically
-	Intercept-		a ~ Normal(0,0.5)
-	Beta(marketing)-	bM~Normal(0,0.5)
-	Beta(R&D)-		bRD~ Normal(0,0.5)
-	Mean-			mu =a+bM*M_std+bRD*RD_std
-	Sigma-			sigma~Exponential(1)
-	Profit_std-		profit~ Normal(mu,sigma)
+ *Mathematically;*<br/>
+&nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/png.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(R&D)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(RD)](https://latex.codecogs.com/png.latex?bRD%20%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/png.latex?mu%20%3Da&plus;bM*M%28std%29&plus;bRD*RD%28std%29)<br/>
+&nbsp;&nbsp;&nbsp;- Profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Profit](https://latex.codecogs.com/png.latex?profit%5Csim%20Normal%28mu%2Csigma%29)<br/>
 
 
 Let plot posterior predictive 
@@ -58,13 +59,12 @@ Let’s take a deep look at the data yearly.
 
 ### Model 2-First Seven Years
 In this model we will be working with only frist seven years 
-*Mathematically
-	Intercept-		a ~ Normal(0,0.5)
-	Beta(marketing)-	bM~Normal(0,0.5)
-	Beta(R&D)-		bRD~ Normal(0,0.5)
-	Mean-			mu =a+bM*M_std[:till year 7]+bRD*RD_std[:till year seven]
-	Sigma-			sigma~Exponential(1)
-	Profit_std-		profit~ Normal(mu,sigma)*
+ *Mathematically;*<br/>
+&nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/png.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(R&D)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(RD)](https://latex.codecogs.com/png.latex?bRD%20%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/png.latex?mu%20%3Da&plus;bM*M%28std%29%5B%3AtillYearSeven%5D&plus;bRD*RD%28std%29%5B%3AtillYearSeven%5D)<br/>
+&nbsp;&nbsp;&nbsp;- Profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Profit](https://latex.codecogs.com/png.latex?profit%5Csim%20Normal%28mu%2Csigma%29)<br/>
 	
 
 ### Model 3 -Later Seven Years
