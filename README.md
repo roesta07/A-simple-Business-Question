@@ -69,14 +69,12 @@ In this model we will be working with only frist seven years
 
 ### Model 3 -Later Seven Years
 In this Model we will be working with the later seven years
-
-*Mathematically
-	Intercept-		a ~ Normal(0,0.5)
-	Beta(marketing)-	bM~Normal(0,0.5)
-	Beta(R&D)-		bRD~ Normal(0,0.5)
-	Mean-			mu =a+bM*M_std[year seven:]+bRD*RD_std[year seven:]
-	Sigma-			sigma~Exponential(1)
-	Profit_std-		profit~ Normal(mu,sigma)*
+ *Mathematically;*<br/>
+&nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/png.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(R&D)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(RD)](https://latex.codecogs.com/png.latex?bRD%20%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/png.latex?mu%20%3Da&plus;bM*M%28std%29%5Byear7above%5D&plus;bRD*RD%28std%29%5Byear7above%5D)<br/>
+&nbsp;&nbsp;&nbsp;- Profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Profit](https://latex.codecogs.com/png.latex?profit%5Csim%20Normal%28mu%2Csigma%29)<br/>
 
 Best way to demonstrate the change in parameters in using forest plot:
 <img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/forest_plot_4.png" width="700" height="300">
