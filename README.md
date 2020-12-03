@@ -10,11 +10,11 @@ Are Marketing Expense and R&D expenses really affecting our profit or is it just
 To answer this question, we will be using multivariable regression model because its good at knocking out spurious association which is what the question is all about; we will talk a lot about this later. The first and foremost thing in our workflow is to set our prior. A prior is just our prior belief; i.e. what do we know about our parameters before we see the data so that we don’t have to look for everything. Therefore, a prior is just a way of telling our model what is infinity and what is not.
 A prior can be improved and narrowed with right domain knowledge and expertise.
 
- *Mathematically;
-	- Intercept		![intercept](https://latex.codecogs.com/gif.latex?a%5Csim%20Normal%280%2C0.5%29)
-	-Beta(marketing) 	![Beta(marketing)](https://latex.codecogs.com/gif.latex?bM%20%5Csim%20Normal%280%2C0.5%29)
-	-Beta(R&D)		![Beta(RD)](https://latex.codecogs.com/gif.latex?bRD%20%5Csim%20Normal%280%2C0.5%29)
-	-Mean			![Beta(mu)](https://latex.codecogs.com/gif.latex?mu%20%3Da&plus;bM*M_std&plus;bRD*RD_std)
+ *Mathematically;*
+&nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/gif.latex?a%5Csim%20Normal%280%2C0.5%29)
+&nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Beta(marketing)](https://latex.codecogs.com/gif.latex?bM%20%5Csim%20Normal%280%2C0.5%29)
+&nbsp;&nbsp;&nbsp;- Beta(R&D)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(RD)](https://latex.codecogs.com/gif.latex?bRD%20%5Csim%20Normal%280%2C0.5%29)
+&nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/gif.latex?mu%20%3Da&plus;bM*M_std&plus;bRD*RD_std)
 *Assuming mean of profit is normally distributed*
 
 You can also do some prior predictive checks if you want to get the sense of your priors. However I will be skipping prior predictive here.
