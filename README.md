@@ -12,9 +12,9 @@ A prior can be improved and narrowed with right domain knowledge and expertise.
 
  *Mathematically;
 	- Intercept		![intercept](https://latex.codecogs.com/gif.latex?a%5Csim%20Normal%280%2C0.5%29)
-	-Beta(marketing) 	bM~Normal(0,0.5)
-	-Beta(R&D)		bRD~ Normal(0,0.5)
-	-Mean			mu =a+bM*M_std+bA*RD_std*
+	-Beta(marketing) 	![Beta(marketing)](https://latex.codecogs.com/gif.latex?bM%20%5Csim%20Normal%280%2C0.5%29)
+	-Beta(R&D)		![Beta(RD)](https://latex.codecogs.com/gif.latex?bRD%20%5Csim%20Normal%280%2C0.5%29)
+	-Mean			![Beta(mu)](https://latex.codecogs.com/gif.latex?mu%20%3Da&plus;bM*M_std&plus;bRD*RD_std)
 *Assuming mean of profit is normally distributed*
 
 You can also do some prior predictive checks if you want to get the sense of your priors. However I will be skipping prior predictive here.
