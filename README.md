@@ -1,6 +1,6 @@
 # Business-Analysis-Template
-Using Bayesian Approach to answer Business questions
-Tools -Pymc3, Python
+Using Bayesian Approach to answer Business questions<br/>
+- Tools -Pymc3, Python<br/>
 
 Every Business has to answer a lot of business questions every day; from simple questions like Are we profiting? Is our new campaign engaging new-fans or just our old-fans? to questions like Is Strategy A really working or is it just the effect of Strategy B?
 Depending upon the variables collected, data collection process and some expertise we can easily answer such questions. Some of us may already predict the answers without even analyzing from instinct and experience which comes from domain expertise and some of us has to map every single possibility to make reasons with numbers. In this example we are using Bayesian statistic as it helps to incorporate both instinct and data.
@@ -11,9 +11,9 @@ To answer this question, we will be using multivariable regression model because
 A prior can be improved and narrowed with right domain knowledge and expertise.
 
  *Mathematically;*<br/>
-&nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/gif.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
-&nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/gif.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
-&nbsp;&nbsp;&nbsp;- Beta(R&D)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(RD)](https://latex.codecogs.com/gif.latex?bRD%20%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/png.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(R&D)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(RD)](https://latex.codecogs.com/png.latex?bRD%20%5Csim%20Normal%280%2C0.5%29)<br/>
 &nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/png.latex?mu%20%3Da&plus;bM*M%28std%29&plus;bRD*RD%28std%29)<br/>
 *Assuming mean of profit is normally distributed*<br/>
 <br/>
