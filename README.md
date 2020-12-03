@@ -40,7 +40,7 @@ Our model will assume that profit will be distributed Normally:
 
 
 Let plot posterior predictive 
-![alt text](https://github.com/roesta07/Business-Analysis-Template/blob/main/img/posterior_predective_2.png)
+![alt text](https://github.com/roesta07/Business-Analysis-Template/blob/main/img/posterior_predective_2.png =250x250)
 
 At this point you can finalize your report; our model finds out the association of both variables with profit and gives pretty okay predictions. But wait; you still have some gut feeling of something is wrong that this is not it or you remember your boss saying something unusual is happening and you decide to look a deeper look at your data. This process is crucial. People often think statistical modelling is just about data & numbers so they often ignore information cues that is important to any model; which is why communicating to domain experts or people around the field is as much important as knowing statistics
 
