@@ -31,7 +31,7 @@ In this example we will be taking a slice of profit and Loss account. The follow
 -Profit: Profit in million (loss in negative)<br/>
 We will be scaling all the data into standard Units. So that its easy to interpret and to reduce computional load.
 
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/pair_plot_1.png" width="400" height="400">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/pair_polt_1.png" width="700" height="700">
 
 We can already see some association along all the variables. We can also calculate covariance if we want relationship in numbers.
 
