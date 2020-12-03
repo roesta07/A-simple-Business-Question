@@ -12,9 +12,9 @@ A prior can be improved and narrowed with right domain knowledge and expertise.
 
  *Mathematically;*<br/>
 &nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/gif.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
-&nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[!Beta(marketing)](https://latex.codecogs.com/gif.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
+&nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/gif.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
 &nbsp;&nbsp;&nbsp;- Beta(R&D)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(RD)](https://latex.codecogs.com/gif.latex?bRD%20%5Csim%20Normal%280%2C0.5%29)<br/>
-&nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/gif.latex?mu%20%3Da&plus;bM*M_std&plus;bRD*RD_std)<br/>
+&nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/png.latex?mu%20%3Da&plus;bM*M%28std%29&plus;bRD*RD%28std%29)<br/>
 *Assuming mean of profit is normally distributed*<br/>
 <br/>
 You can also do some prior predictive checks if you want to get the sense of your priors. However I will be skipping prior predictive here.
