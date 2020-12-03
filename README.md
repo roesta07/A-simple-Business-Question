@@ -11,10 +11,10 @@ To answer this question, we will be using multivariable regression model because
 A prior can be improved and narrowed with right domain knowledge and expertise.
 
  *Mathematically;
-	Intercept-		a~ Normal(0,0.5)
-	Beta(marketing)-	bM~Normal(0,0.5)
-	Beta(R&D)-		bRD~ Normal(0,0.5)
-	Mean-			mu =a+bM*M_std+bA*RD_std*
+	-Intercept		a~ Normal(0,0.5)
+	-Beta(marketing) 	bM~Normal(0,0.5)
+	-Beta(R&D)		bRD~ Normal(0,0.5)
+	-Mean			mu =a+bM*M_std+bA*RD_std*
 *Assuming mean of profit is normally distributed*
 
 You can also do some prior predictive checks if you want to get the sense of your priors. However I will be skipping prior predictive here.
