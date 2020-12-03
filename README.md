@@ -1,5 +1,5 @@
 # Business-Analysis
-Using Bayesian Approach to answer Business questions<br/>
+- Using Bayesian Approach to answer Business questions about spurious association<br/>
 - Tools -Pymc3, Python<br/>
 
 Every Business has to answer a lot of business questions every day; from simple questions like Are we profiting? Is our new campaign engaging new-fans or just our old-fans? to questions like Is Strategy A really working or is it just the effect of Strategy B?
