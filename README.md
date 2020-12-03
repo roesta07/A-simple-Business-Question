@@ -98,7 +98,7 @@ Note: Multivariable regression does a very good thing by knocking the spurious a
 
 Lastly, let's lets plot the Model prediction; which will look slightly better than Model 1
 
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/predective_posterior.png" width="400" height="400">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/predective_posterior.png" width="1000" height="450">
 
 
 
