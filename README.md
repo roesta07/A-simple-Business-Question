@@ -5,7 +5,7 @@ Tools -Pymc3, Python
 Every Business has to answer a lot of business questions every day; from simple questions like Are we profiting? Is our new campaign engaging new-fans or just our old-fans? to questions like Is Strategy A really working or is it just the effect of Strategy B?
 Depending upon the variables collected, data collection process and some expertise we can easily answer such questions. Some of us may already predict the answers without even analyzing from instinct and experience which comes from domain expertise and some of us has to map every single possibility to make reasons with numbers. In this example we are using Bayesian statistic as it helps to incorporate both instinct and data.
 
-## Business Question
+## Our Business Question
 Are Marketing Expense and R&D expenses really affecting our profit or is it just one causing another?
 To answer this question, we will be using multivariable regression model because its good at knocking out spurious association which is what the question is all about; we will talk a lot about this later. The first and foremost thing in our workflow is to set our prior. A prior is just our prior belief; i.e. what do we know about our parameters before we see the data so that we don’t have to look for everything. Therefore, a prior is just a way of telling our model what is infinity and what is not.
 A prior can be improved and narrowed with right domain knowledge and expertise.
@@ -19,7 +19,7 @@ A prior can be improved and narrowed with right domain knowledge and expertise.
 
 You can also do some prior predictive checks if you want to get the sense of your priors. However I will be skipping prior predictive here.
 
-**Data
+##Data
 In this example we will be taking a slice of profit and Loss account. The following are the variables simulated. 
 -M_expenses: Marketing expenses in million
 -RD_expenses: Research and Development expenses in million
@@ -28,7 +28,7 @@ Fig: Pair Plot
 
 We can already see some association along all the variables. We can also calculate covariance if we want relationship in numbers.
 
-**Model
+##Model-1
 Our model will assume that profit will be distributed Normally:
 *Mathematically
 	Intercept-		a ~ Normal(0,0.5)
@@ -56,7 +56,7 @@ Let’s take a deep look at the data yearly.
 <img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/trend_3.png" width="1000" height="400">
 
 
-**Model 2-First Seven Years
+##Model 2-First Seven Years
 In this model we will be working with only frist seven years 
 *Mathematically
 	Intercept-		a ~ Normal(0,0.5)
@@ -67,7 +67,7 @@ In this model we will be working with only frist seven years
 	Profit_std-		profit~ Normal(mu,sigma)*
 	
 
-**Model 3 -Later Seven Years
+##Model 3 -Later Seven Years
 In this Model we will be working with the later seven years
 
 *Mathematically
@@ -81,7 +81,7 @@ In this Model we will be working with the later seven years
 Best way to demonstrate the change in parameters in using forest plot:
 <img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/forest_plot_4.png" width="700" height="300">
 
-**CounterFactuals
+##CounterFactuals
 We have seen the change now let’s see the affect. Such affects can be seen by asking further questions like what does change in one variable and keeping the other variables constant does with the outcome? It’s basically the question about past that if we had done this what would have happened? 
 
 
@@ -89,7 +89,7 @@ We have seen the change now let’s see the affect. Such affects can be seen by 
 <img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/counter_2.png" width="1000" height="400">
 
 
-**Findings 
+##Findings 
 -For first seven years Marketing was the cause of profit given only two predictor variable
 -After seven years till fourteen years Marketing had minimal or no affect to profit but was mimicking the association of R&D and profit. In statistical term it’s called spurious association. 
 
