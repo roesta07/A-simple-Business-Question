@@ -36,7 +36,7 @@ We will be scaling all the data into standard Units. So that its easy to interpr
 We can already see some association along all the variables. We can also calculate covariance if we want relationship in numbers.
 
 ### Model-1
-Our model will assume that profit will be distributed Normally:
+Our model will assume that profit will be distributed Normally:<br/>
  *Mathematically;*<br/>
 &nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
 &nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/png.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
@@ -45,10 +45,10 @@ Our model will assume that profit will be distributed Normally:
 &nbsp;&nbsp;&nbsp;- Profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Profit](https://latex.codecogs.com/png.latex?profit%5Csim%20Normal%28mu%2Csigma%29)<br/>
 
 
-Let plot posterior predictive 
+Let's plot posterior predictive 
 
 
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/posterior_predective_2.png" width="400" height="400">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/posterior_predective_2.png" width="500" height="500">
 
 
 At this point you can finalize your report; our model finds out the association of both variables with profit and gives pretty okay predictions. But wait; you still have some gut feeling of something is wrong that this is not it or you remember your boss saying something unusual is happening and you decide to look a deeper look at your data. This process is crucial. People often think statistical modelling is just about data & numbers so they often ignore information cues that is important to any model; which is why communicating to domain experts or people around the field is as much important as knowing statistics
@@ -56,14 +56,14 @@ At this point you can finalize your report; our model finds out the association 
 ### Digging deep into Data
 Let’s take a deep look at the data yearly.
 
-**Trend Plot 
+*Trend Plot 
 
 
 <img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/trend_3.png" width="1000" height="400">
 
 
 ### Model 2-First Seven Years
-In this model we will be working with only frist seven years 
+In this model we will be working with only frist seven years <br/>
  *Mathematically;*<br/>
 &nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
 &nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/png.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
@@ -73,7 +73,7 @@ In this model we will be working with only frist seven years
 	
 
 ### Model 3 -Later Seven Years
-In this Model we will be working with the later seven years
+In this Model we will be working with the later seven years<br/>
  *Mathematically;*<br/>
 &nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
 &nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/png.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
@@ -81,7 +81,7 @@ In this Model we will be working with the later seven years
 &nbsp;&nbsp;&nbsp;- Mean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(mu)](https://latex.codecogs.com/png.latex?mu%20%3Da&plus;bM*M%28std%29%5Byear7above%5D&plus;bRD*RD%28std%29%5Byear7above%5D)<br/>
 &nbsp;&nbsp;&nbsp;- Profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Profit](https://latex.codecogs.com/png.latex?profit%5Csim%20Normal%28mu%2Csigma%29)<br/>
 
-Best way to demonstrate the change in parameters in using forest plot:
+Best way to demonstrate the change in parameters of both models is by using forest plot:
 <img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/forest_plot_4.png" width="700" height="300">
 
 ### CounterFactuals
@@ -96,7 +96,7 @@ We have seen the change now let’s see the affect. Such affects can be seen by 
 - For first seven years Marketing was the cause of profit given only two predictor variable
 - After seven years till fourteen years Marketing had minimal or no affect to profit but was mimicking the association of R&D and profit. In statistical term it’s called spurious association. 
 
-Note: Multivariable regression does a very good thing by knocking the spurious association. It does this by looking at the association of the residuals for each variable after removing the effect of one. This all happens at the back of the algorithm so you don’t have to worry about it; well for now.
+*Note: Multivariable regression does a very good thing by knocking the spurious association. It does this by looking at the association of the residuals for each variable after removing the effect of one. This all happens at the back of the algorithm so you don’t have to worry about it; atleast for now.
 
 
 Lastly, let's lets plot the Model prediction; which will look slightly better than Model 1
