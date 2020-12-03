@@ -1,6 +1,7 @@
 # Business-Analysis
-- Using Bayesian Approach to answer Business questions about spurious association<br/>
+- Using Bayesian Approach to answer Business questions<br/>
 - Tools -Pymc3, Python<br/>
+
 
 Every Business has to answer a lot of business questions every day; from simple questions like Are we profiting? Is our new campaign engaging new-fans or just our old-fans? to questions like Is Strategy A really working or is it just the effect of Strategy B?
 Depending upon the variables collected, data collection process and some expertise we can easily answer such questions. Some of us may already predict the answers without even analyzing from instinct and experience which comes from domain expertise and some of us has to map every single possibility to make reasons with numbers. In this example we are using Bayesian statistic as it helps to incorporate both instinct and data.
@@ -12,6 +13,8 @@ To answer this question, we will be using multivariable regression model because
 The first and foremost thing in our workflow is to set our prior. A prior is just our prior belief; i.e. what do we know about our parameters before we see the data so that we don’t have to look for everything. Therefore, a prior is just a way of telling our model what is infinity and what is not.
 A prior can be improved and narrowed with right domain knowledge and expertise.
 
+All the codes to do this will be in the <a href="https://www.w3schools.com">notebook here</a>
+
  *Mathematically;*<br/>
 &nbsp;&nbsp;&nbsp;- Intercept&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![intercept](https://latex.codecogs.com/png.latex?a%5Csim%20Normal%280%2C0.5%29)<br/>
 &nbsp;&nbsp;&nbsp;- Beta(marketing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Beta(marketing)](https://latex.codecogs.com/png.latex?bM%20%5Csim%20Normal%280%2C0.5%29)<br/>
@@ -22,11 +25,13 @@ A prior can be improved and narrowed with right domain knowledge and expertise.
 You can also do some prior predictive checks if you want to get the sense of your priors. However I will be skipping prior predictive here.
 
 ### Data
-In this example we will be taking a slice of profit and Loss account. The following are the variables simulated. 
--M_expenses: Marketing expenses in million
--RD_expenses: Research and Development expenses in million
--Profit: Profit in million (loss in negative)
-Fig: Pair Plot
+In this example we will be taking a slice of profit and Loss account. The following are the variables simulated.<br/>
+-M_expenses: Marketing expenses in million<br/>
+-RD_expenses: Research and Development expenses in million<br/>
+-Profit: Profit in million (loss in negative)<br/>
+We will be scaling all the data into standard Units. So that its easy to interpret and to reduce computional load.
+
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/pair_plot_1.png" width="400" height="400">
 
 We can already see some association along all the variables. We can also calculate covariance if we want relationship in numbers.
 
