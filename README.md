@@ -3,12 +3,14 @@
 - Tools -Pymc3, Python<br/>
 
 
-Every Business has to answer a lot of business questions every day; from simple questions like Are we profiting? Is our new campaign engaging new-fans or just our old-fans? to questions like Is Strategy A really working or is it just the effect of Strategy B?
+Every Business has to answer a lot of business questions every day; from simple questions like Are we profiting?, Is our new campaign engaging new-fans or just our old-fans? to questions like Is Strategy A really working or is it just the effect of Strategy B?
 Depending upon the variables collected, data collection process and some expertise we can easily answer such questions. Some of us may already predict the answers without even analyzing from instinct and experience which comes from domain expertise and some of us has to map every single possibility to make reasons with numbers. In this example we are using Bayesian statistic as it helps to incorporate both instinct and data.
 
 ## Our Business Question
-Are Marketing Expense and R&D expenses really affecting our profit or is it just one causing another?
+Marketing and R&D expense really affecting our profit or is it just one causing another?
 To answer this question, we will be using multivariable regression model because its good at knocking out spurious association which is what the question is all about; we will talk a lot about this later.
+
+
 ### Prior
 The first and foremost thing in our workflow is to set our prior. A prior is just our prior belief; i.e. what do we know about our parameters before we see the data so that we don’t have to look for everything. Therefore, a prior is just a way of telling our model what is infinity and what is not.
 A prior can be improved and narrowed with right domain knowledge and expertise.
@@ -25,7 +27,7 @@ All the codes to do this will be in the <a href="https://github.com/roesta07/Bus
 You can also do some prior predictive checks if you want to get the sense of your priors. However I will be skipping prior predictive checks for this example.
 
 ### Data
-In this example we will be taking a slice of profit and Loss account. The following are the variables simulated.<br/>
+In this example we will be taking a slice of profit and Loss account also we will be simulating our data .<br/>
 -M_expenses: Marketing expenses in million<br/>
 -RD_expenses: Research and Development expenses in million<br/>
 -Profit: Profit in million (loss in negative)<br/>
@@ -51,7 +53,7 @@ Let's plot posterior predictive
 <img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/posterior_predective_2.png" width="500" height="500">
 
 
-At this point you can finalize your report; our model finds out the association of both variables with profit and gives pretty okay predictions. But wait; you still have some gut feeling of something is wrong that this is not it or you remember your boss saying something unusual is happening and you decide to look a deeper look at your data. This process is crucial. People often think statistical modelling is just about data & numbers so they often ignore information cues that is important to any model; which is why communicating to domain experts or people around the field is as much important as knowing statistics
+At this point we are ready to report above analysis i.e. both Marketing and R&D has a Positive relationship with profit and we could have if we had not known about change in marketing strategies with innovation in our services which makes us take a deeper look at our data. Well how do we know about such information? Well in often cases you get such information by talking to field experts or person related with that department, decision makers or anyone related to the predictor variable we are using. This process is crucial. People often ignore information cues while modelling.
 
 ### Digging deep into Data
 Let’s take a deep look at the data yearly.
