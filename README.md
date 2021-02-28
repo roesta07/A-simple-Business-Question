@@ -33,7 +33,7 @@ In this example we will be taking a slice of profit and Loss account also we wil
 -Profit: Profit in million (loss in negative)<br/>
 We will be scaling all the data into standard Units. So that its easy to interpret and to reduce computional load.
 
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/pair_polt_1.png" width="700" height="700">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/pair_polt_1.png" width="700">
 
 We can already see some association along all the variables. We can also calculate covariance if we want relationship in numbers.
 
@@ -50,7 +50,7 @@ Our model will assume that profit will be distributed Normally:<br/>
 Let's plot posterior predictive 
 
 
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/posterior_predective_2.png" width="500" height="500">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/posterior_predective_2.png" width="500">
 
 
 At this point we are ready to report above analysis i.e. both Marketing and R&D has a Positive relationship with profit and we could have if we had not known about change in marketing strategies with innovation in our services which makes us take a deeper look at our data. Well how do we know about such information? Well in often cases you get such information by talking to field experts or person related with that department, decision makers or anyone related to the predictor variable we are using. This process is crucial. People often ignore information cues while modelling.
@@ -61,7 +61,7 @@ Let’s take a deep look at the data yearly.
 *Trend Plot 
 
 
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/trend_3.png" width="1000" height="400">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/trend_3.png" width="1000">
 
 
 ### Model 2-First Seven Years
@@ -84,14 +84,14 @@ In this Model we will be working with the later seven years<br/>
 &nbsp;&nbsp;&nbsp;- Profit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Profit](https://latex.codecogs.com/png.latex?profit%5Csim%20Normal%28mu%2Csigma%29)<br/>
 
 Best way to demonstrate the change in parameters of both models is by using forest plot:
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/forest_plot_4.png" width="700" height="300">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/forest_plot_4.png" width="700">
 
 ### CounterFactuals
 We have seen the change now let’s see the affect. Such affects can be seen by asking further questions like what does change in one variable and keeping the other variables constant does with the outcome? It’s basically the question about past that if we had done this what would have happened? 
 
 
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/counter_1.png" width="1000" height="400">
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/counter_2.png" width="1000" height="400">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/counter_1.png" width="1000" >
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/counter_2.png" width="1000" >
 
 
 ### Findings 
@@ -103,7 +103,7 @@ We have seen the change now let’s see the affect. Such affects can be seen by 
 
 Lastly, let's lets plot the Model prediction; which will look slightly better than Model 1
 
-<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/predective_posterior.png" width="1000" height="450">
+<img src="https://github.com/roesta07/Business-Analysis-Template/blob/main/img/predective_posterior.png" width="1000">
 
 
 
